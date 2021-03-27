@@ -115,19 +115,19 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(age,weight){
+function hungryDog(weight,age){
     if(age < 1){
      age = age / 12;
-      if(age >= .5 && age <= 0.25){
+      if(age >= .1666 && age <= 0.3333){ // 2-4 months 
         return weight * .10;
-      } else if(age > 0.25 && age <= .1428){
+      } else if(age > 0.3333 && age <= .583){ // 4-7 months
         return weight * 0.05;
-      } else if(age > 0.1428 && age < 1){
+      } else if(age > 0.1428 && age < 1){ // 7 -12 months
         return weight * 0.04;
       }
     }
       if(age >= 1){
-        if (weight < 5){
+        if (weight <= 5){
           return weight * 0.05;
         } else if(weight >= 6 && weight <= 10){
           return weight * 0.04;
