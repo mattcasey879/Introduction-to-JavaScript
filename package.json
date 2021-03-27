@@ -8,7 +8,7 @@
     "test:watch": "jest --verbose --watchAll"
   },
   "repository": {
-    "type": "git",
+    "type": "module",
     "url": "git+https://github.com/LambdaSchool/Introduction-to-JavaScript.git"
   },
   "keywords": [],
